@@ -18,9 +18,9 @@ namespace CompAndDel
             PipeSerial SerialEjercicio = new PipeSerial(Gris, Serial);
             provider.SavePicture(SerialEjercicio.Send(picture), "C:\\Users\\tinch\\OneDrive\\Escritorio\\luke3.jpg");
             ///Ejercicio 2
-            FilterPersistir p1 = new FilterPersistir();
+            FilterPersistir p1 = new FilterPersistir(provider);
             p1.referencia = "Intermedio";
-            FilterPersistir p2 = new FilterPersistir();
+            FilterPersistir p2 = new FilterPersistir(provider);
             p2.referencia = "Intermedio2";
             PipeSerial Serial2 = new PipeSerial(Negativo, Null);
             PipeSerial SerialGuardar = new PipeSerial(p1, Serial2);

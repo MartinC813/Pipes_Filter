@@ -8,11 +8,18 @@ namespace CompAndDel.Filters
     /// </remarks>
     public class FilterPersistir : IFilter
     {
+        /// <summary>
+        /// Cumple DIP
+        /// </summary>
         public string referencia;
+        IPictureProvider provider;
+        private FilterPersistir(IPictureProvider provider)
+        {
+            this.provider = provider;
+        }
         public IPicture Filter(IPicture image)
         {
-            PictureProvider provider = new PictureProvider();
-            provider.SavePicture(image, $"C:\\Users\\tinch\\OneDrive\\Escritorio\\{this.referencia}.jpg");
+            this.provider.SavePicture(image, $"C:\\Users\\tinch\\OneDrive\\Escritorio\\{this.referencia}.jpg");
             return image;
         }
     }

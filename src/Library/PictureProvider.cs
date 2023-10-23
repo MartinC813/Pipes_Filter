@@ -7,7 +7,7 @@ namespace CompAndDel
     /// <summary>
     /// Esta clase permite leer y guardar imágenes desde archivos.
     /// </summary>
-    public class PictureProvider
+    public class PictureProvider:IPictureProvider
     {
         /// <summary>
         /// Lee una imagen desde un archivo.
