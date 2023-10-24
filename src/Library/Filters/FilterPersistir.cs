@@ -13,13 +13,13 @@ namespace CompAndDel.Filters
         /// </summary>
         public string referencia;
         IPictureProvider provider;
-        private FilterPersistir(IPictureProvider provider)
+        public FilterPersistir(IPictureProvider provider)
         {
             this.provider = provider;
         }
         public IPicture Filter(IPicture image)
         {
-            this.provider.SavePicture(image, $"C:\\Users\\tinch\\OneDrive\\Escritorio\\{this.referencia}.jpg");
+            this.provider.SavePicture(image, $"{this.referencia}.jpg");
             return image;
         }
     }

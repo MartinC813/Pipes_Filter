@@ -11,6 +11,7 @@ namespace CompAndDel
     /// </summary>
     public class Picture : IPicture
     {
+        public bool caraBool;
         private Color[,] colorsMatrix;
 
         /// <summary>
@@ -22,8 +23,12 @@ namespace CompAndDel
         {
             this.colorsMatrix = new Color[width, height];
             this.colorsMatrix.Initialize();
+            this.caraBool = false;
         }
-
+        public void cambio()
+        {
+            this.caraBool = true;
+        }
         /// <summary>
         /// Devuelve el ancho en pixels de la imagen.
         /// </summary>

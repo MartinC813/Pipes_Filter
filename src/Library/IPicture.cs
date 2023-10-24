@@ -14,6 +14,7 @@ namespace CompAndDel
         /// Retorna el ancho de la imagen.
         /// </summary>
         Int32 Width { get; }
+        
 
         /// <summary>
         /// Retorna el alto de la imagen.
