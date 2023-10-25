@@ -13,6 +13,7 @@ namespace CompAndDel
            ejercicio2();
            ejercicio3();
            ejercicio4();
+
         }
 
 
@@ -70,6 +71,8 @@ namespace CompAndDel
             ///Las referencias seran los path de las imagenes guardadas
             p1.referencia = "Ejercicio3Foto1";
             p2.referencia = "Ejercicio3Foto2";
+
+            ///Crea los filtros para publicar en tw
             FilterTwitter publicador1 = new FilterTwitter();
             FilterTwitter publicador2 = new FilterTwitter();
 
