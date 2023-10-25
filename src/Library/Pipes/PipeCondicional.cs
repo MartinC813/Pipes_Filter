@@ -19,12 +19,6 @@ namespace CompAndDel.Pipes
         {
             get{return false;}
         }
-        
-        /// <summary>
-        /// La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
-        /// </summary>
-        /// <param name="filtro">Filtro que se debe aplicar sobre la imagen</param>
-        /// <param name="nextPipe">Siguiente cañería</param>
         public PipeCondicional(FilterCondicional nextFiltro, IPipe nextPipeTrue, IPipe nextPipeFalse)
         {
             this.pipeTrue = nextPipeTrue;

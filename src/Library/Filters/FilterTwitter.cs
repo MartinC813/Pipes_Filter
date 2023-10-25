@@ -4,9 +4,6 @@ using Ucu.Poo.Twitter;
 
 namespace CompAndDel.Filters
 {
-    /// <summary>
-    /// Un filtro que recibe una imagen y retorna su negativo.
-    /// </remarks>
     public class FilterTwitter : IFilter
     {
         public TwitterImage publisher;
